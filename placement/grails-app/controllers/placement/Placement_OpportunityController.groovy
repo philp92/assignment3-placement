@@ -1,10 +1,17 @@
 package placement
 
 import org.springframework.dao.DataIntegrityViolationException
+import grails.converters.JSON
 
 class Placement_OpportunityController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
+
+def getPlacements(){
+def openPlacementslist = Placement_Opportunity.findAllByStatus("Open")
+def converter = openPlacementslist as JSON
+render openPlacementslist as JSON
+	}
 
     def index() {
         redirect(action: "list", params: params)
