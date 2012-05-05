@@ -1,0 +1,12 @@
+To clone my application, the URL for my application from my github account will be needed, so go to my account (username: philp92) and into the repository placement-assignment, and copy the URL found there.
+
+In the terminal (with grails version 2.0.3 installed) enter the command git clone <URL of application>
+
+Then to actually clone it, enter ls –la
+
+Once cloned, enter into the top directory using cd placement-assignment
+
+If you now enter ls you should see that there is only a readme file. This is because I created my application on a separate develop branch, so you will have to checkout that with git checkout develop
+
+You can now enter the project directory with cd Placement and run the application.
+
