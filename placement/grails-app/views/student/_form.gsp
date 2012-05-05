@@ -19,13 +19,6 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'coursecode', 'error')} ">
-	<label for="coursecode">
-		<g:message code="student.coursecode.label" default="Coursecode" />
-		
-	</label>
-	<g:textField name="coursecode" value="${studentInstance?.coursecode}"/>
-</div>
 
 <div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'name', 'error')} ">
 	<label for="name">
@@ -33,6 +26,14 @@
 		
 	</label>
 	<g:textField name="name" value="${studentInstance?.name}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'coursecode', 'error')} ">
+	<label for="coursecode">
+		<g:message code="student.coursecode.label" default="Coursecode" />
+		
+	</label>
+	<g:textField name="coursecode" value="${studentInstance?.coursecode}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'notes', 'error')} ">
